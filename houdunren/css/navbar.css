@@ -1,0 +1,78 @@
+header {
+  border-bottom: solid 5px #16a085;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 10px;
+}
+header .navbar label {
+  display: none;
+}
+header .navbar label + input {
+  display: none;
+}
+header .navbar .logo {
+  color: #16a085;
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 1.3rem;
+}
+header .navbar .collapse {
+  display: flex;
+  flex-grow: 1;
+}
+header .navbar .collapse .links {
+  display: flex;
+  flex-grow: 1;
+}
+header .navbar .collapse .links li {
+  margin: 0 10px;
+}
+header .navbar .collapse .links li a {
+  color: #777;
+  font-weight: bold;
+}
+header .navbar .collapse .links li a:hover {
+  color: #333;
+}
+header .navbar .collapse .form a {
+  border: 1px solid #16a085;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+  color: #16a085;
+}
+header .navbar .collapse .form a.form-bg {
+  background-color: #16a085;
+  color: white;
+}
+@media only screen and (max-width: 960px) {
+  header .navbar {
+    flex-flow: row wrap;
+  }
+  header .navbar label {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  header .navbar label + input:checked + .collapse {
+    display: block;
+  }
+  header .navbar .logo {
+    margin-right: auto;
+  }
+  header .navbar .collapse {
+    display: none;
+    flex-flow: column;
+    width: 100%;
+  }
+  header .navbar .collapse .links {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  header .navbar .collapse .links li {
+    margin: 0.5rem 0;
+  }
+}

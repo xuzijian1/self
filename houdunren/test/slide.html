@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+        main{
+            width: 400px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        section{
+            width: 1200px;
+            height: 200px;
+            display: grid;
+            grid-template: 1fr/repeat(3,400px);
+            animation-name: slide;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(3,end);
+        }
+        img{
+            width: 100%;
+        }
+        @keyframes slide {
+            to{
+                transform: translateX(-1200px);
+            }
+        }
+        @keyframes nav {
+            to{
+                transform: translateX(150px);
+            }
+        }
+        ul{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 150px;
+            height: 50px;
+            display: grid;
+            grid-template: 1fr/repeat(3,1fr);
+            justify-items: center;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+            background-color: #95a5a6;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: .5;
+        }
+        ul::after{
+            content: '';
+            background-color: #e74c3c;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            opacity: .5;
+            animation-name: nav;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(3,end);
+        }
+        section:hover,section:hover+ul::after{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div><img src="/img/image-20190725125429044.BivlcW39.png" alt=""></div>
+            <div><img src="/img/image-20190725125609883.D-8Bbdq7.png" alt=""></div>
+            <div><img src="/img/xj.BkzzMsXj.jpg" alt=""></div>
+        </section>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .container {
+        transform-style: preserve-3d;
+        perspective: 900px;
+        width: 316px;
+        height: 300px;
+        margin: 50px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        
+    }
+    .container:hover img {
+        transform: translateZ(10px);
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="/img/phone316.png" alt="3D Image">
+</div>
+</body>
+</html>
