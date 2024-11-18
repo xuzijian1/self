@@ -1,0 +1,40 @@
+footer {
+  width: 100vw;
+  height: 21.866666666666667vw;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  bottom: 0;
+}
+footer .back-footer {
+  width: 100vw;
+  height: 14.933333333333335vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .back-footer section {
+  width: 91.46666666666667vw;
+  height: 10.666666666666668vw;
+  border-radius: 2.1333333333333333vw;
+  border: 0.5px solid #7972fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.266666666666667vw;
+  color: #7972fe;
+}
+footer .site-footer {
+  width: 100vw;
+  height: 6.933333333333333vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .site-footer .site-box {
+  width: 35.733333333333334vw;
+  height: 1.6vw;
+  background: #000000;
+  border-radius: 0.8vw;
+}

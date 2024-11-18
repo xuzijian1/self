@@ -1,0 +1,72 @@
+ul li {
+  display: flex;
+  height: 44px;
+  width: 152px;
+  align-items: center;
+  padding: 13px 12px 13px 18px;
+}
+ul li img {
+  width: 14px;
+  height: 14px;
+}
+ul li span {
+  width: 130px;
+  height: 14px;
+  margin: 0 8px;
+  font-family: Microsoft YaHei UI;
+  font-size: 12px;
+  color: #b1b1aa;
+}
+ul label {
+  cursor: pointer;
+}
+ul li:hover {
+  background: #555;
+}
+ul li:hover span {
+  color: #ffffff;
+}
+ul input {
+  display: none;
+}
+ul input:checked + .nav-2 {
+  display: block;
+}
+ul label:focus img {
+  transform: rotate(180deg);
+}
+ul .nav-2 {
+  display: none;
+}
+ul .nav-2 ul {
+  background: #1a1b23;
+}
+ul .nav-2 ul li {
+  padding: 13px 12px 13px 40px;
+  width: 152px;
+  height: 44px;
+}
+ul .nav-2 ul li span {
+  color: #ffffff;
+}
+ul .nav-2 ul > li:hover {
+  background: #555;
+}
+ul .nav-2 ul > label > li:hover {
+  background: #555;
+}
+ul .nav-2 .nav-3 {
+  display: none;
+  background: #000000;
+}
+ul .nav-2 .nav-3 li {
+  padding: 11px 12px 11px 54px;
+  width: 152px;
+  height: 40px;
+}
+ul .nav-2 .nav-3 li > span:hover {
+  color: #FF9300;
+}
+ul .nav-2 input:checked + .nav-3 {
+  display: block;
+}

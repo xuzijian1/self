@@ -1,0 +1,41 @@
+@import url(common.less);
+footer{
+    .pxToVW(375);
+    .pxToVW(82,height);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+    .back-footer{
+        .pxToVW(375);
+        .pxToVW(56,height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        section{
+            .pxToVW(343);
+            .pxToVW(40,height);
+            .pxToVW(8,border-radius);
+            border: .5px solid #7972fe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .pxToVW(16,font-size);
+            color: #7972fe;
+        }
+    }
+    .site-footer{
+        .pxToVW(375);
+        .pxToVW(26,height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .site-box{
+            .pxToVW(134);
+            .pxToVW(6,height);
+            background: #000000;
+            .pxToVW(3,border-radius);
+        }
+    }
+}

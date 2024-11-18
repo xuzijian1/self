@@ -1,0 +1,242 @@
+.home{
+    width: 100%;
+    min-width: 1226px;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    .home-hero{
+        width: 1226px;
+        height: 644px;
+        display: flex;
+        flex-direction: column;
+        @keyframes img-list {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-7356px);
+            }
+        }
+        @keyframes dots {
+            to{
+                transform: translateX(120px);
+            }
+        }
+        .hero-top{
+            width: 1226px;
+            height: 460px;
+            overflow: hidden;
+            position: relative;
+            .hero-nav{
+                width: 234px;
+                height: 460px;
+                position: absolute;
+                z-index: 1;
+                color: #fff;
+                background: rgba(105, 101, 101, .6);
+                padding: 20px 0;
+                >ul{
+                    >li{
+                        padding-left: 30px;
+                        padding-right: 20px;
+                        height: 42px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        i{
+                            font-size: 16px;
+                            color: #e0e0e0;
+                        }
+                        &:hover{
+                            background: #d35400;
+                            .hero-list{
+                                display: block;
+                            }
+                        }
+                        .hero-list{
+                            position: absolute;
+                            background: #fff;
+                            top: 0;
+                            left: 234px;
+                            color: #333;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+                            height: 460px;
+                            z-index: 10;
+                            display: none;
+                            >ul{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                writing-mode: vertical-lr;
+                                height: 460px;
+                                li{
+                                    writing-mode: horizontal-tb;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    width: 248px;
+                                    height: 76.5px;
+                                    font-size: 14px;
+                                    padding-left: 30px;
+                                    padding-right: 20px;
+                                    align-items: center;
+                                    cursor: pointer;
+                                    img{
+                                        padding-right: 10px;
+                                    }
+                                    &:hover{
+                                        color: #d35400;
+                                    }
+                                }
+                            }
+                        }
+                        .hero-list:hover{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .hero-img{
+                width: 7356px;
+                height: 460px;
+                display: flex;
+                animation-name: img-list;
+                animation-duration: 30s;
+                animation-iteration-count: infinite;
+                animation-timing-function: steps(6,end);
+                cursor: pointer;
+                &:hover{
+                    animation-play-state: paused;
+                }
+                &:hover+ul+.dot{
+                    animation-play-state: paused;
+                }
+            }
+            >ul{
+                position: absolute;
+                height: 10px;
+                display: flex;
+                z-index: 3;
+                top: 420px;
+                left: 1080px;
+                li{
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    box-sizing: content-box;
+                    border-color: hsla(0, 0%, 100%, .3);
+                    border: 2px solid #999;
+                    background: #757575;
+                    margin: 0 4px;
+                    opacity: .8;
+                    cursor: pointer;
+                    &:hover{
+                        background: #fff;
+                    }
+                    
+                }
+            }
+            .dot{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                position: absolute;
+                background: white;
+                box-sizing: content-box;
+                z-index: 4;
+                top: 422px;
+                left: 1086px;
+                animation-name: dots;
+                animation-duration: 30s;
+                animation-timing-function: steps(6,end);
+                cursor: pointer;
+                animation-iteration-count: infinite;
+            }
+            .left{
+                position: absolute;
+                width: 41px;
+                height: 69px;
+                transform: translateY(-50%) rotate(180deg);
+                top: 50%;
+                z-index: 5;
+                left: 234px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: 40px;
+                    font-weight: lighter;
+                    color: #999;
+                }
+                &:hover{
+                    background: #333;
+                    opacity: .7;
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+            .right{
+                position: absolute;
+                width: 41px;
+                height: 69px;
+                transform: translateY(-50%);
+                top: 50%;
+                z-index: 5;
+                left: 1185px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: 40px;
+                    font-weight: lighter;
+                    color: #999;
+                }
+                &:hover{
+                    background: #333;
+                    opacity: .7;
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .hero-bottom{
+            width: 1226px;
+            height: 170px;
+            margin-top: 14px;
+            display: flex;
+            justify-content: space-between;
+            
+            .bottom-channel{
+                width: 234px;
+                height: 170px;
+                display: grid;
+                grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+                background: #5f5750;
+                font-size: 12px;
+
+                span{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: #ffffff;
+                    opacity: .7;
+                    font-size: 12px;
+                    cursor: pointer;
+                    i{
+                        font-size: 24px;
+                        margin: 0 auto 4px;
+                    }
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@import url(common.less);
+.details-table{
+    .pxToVW(311);
+    tbody{
+        th{
+            text-align: left;
+            .pxToVW(5,padding-top);
+            .pxToVW(8,padding-right);
+            .pxToVW(5,padding-bottom);
+            .pxToVW(14,font-size);
+            .pxToVW(78);
+            .pxToVW(29,height);
+            font-weight: 400;
+            color: #6e6d72;
+        }
+        td{
+            .pxToVW(5,padding-top);
+            .pxToVW(5,padding-bottom);
+            .pxToVW(8,padding-left);
+            .pxToVW(14,font-size);
+            .pxToVW(233);
+            .pxToVW(29,height);
+            font-weight: 400;
+            color: #03050d;
+            font-family: Arial, Helvetica, sans-serif;
+            a{
+                color: #7972fe;
+                // position: relative;
+            }
+            span{
+                &::after{
+                    content: url(/img/Shape.png);
+                }
+            }
+        }
+    }
+}
+.box-header{
+    .pxToVW(343);
+    .pxToVW(40,height);
+    .pxToVW(16,padding-left);
+    .pxToVW(16,padding-right);
+    .pxToVW(8,margin-bottom);
+    display: flex;
+    align-items: center;
+    border-bottom: .5px dashed #d7d7d8;
+    i{
+        color: #7972fe;
+        .pxToVW(5, margin-left);
+    }
+    .box-state{
+        .pxToVW(50);
+        .pxToVW(20,height);
+        .pxToVW(4,border-radius);
+        margin-left: auto;
+        .pxToVW(12, font-size);
+        color: #fff;
+        background: #ffa26c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.box-footer{
+    .pxToVW(311);
+    .pxToVW(34,height);
+    display: flex;
+    justify-content: space-evenly;
+    color: #7972fe;
+    .pxToVW(12,font-size);
+    section{
+        .pxToVW(34,height);
+        .pxToVW(96);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            .pxToVW(12);
+            .pxToVW(10,height);
+            .pxToVW(3,margin-right);
+            .pxToVW(0,margin-bottom);
+        }
+    }
+}

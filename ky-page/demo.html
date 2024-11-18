@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    width: 100%;
+    height: 50px;
+    background: #6637c5;
+    display: block;
+    position: sticky;
+  }
+
+  main {
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    display: flex;
+    position: relative;
+  }
+
+  main>.left {
+    width: 160px;
+    height: 100%;
+    background: #f6f6f6;
+  }
+
+  main>.right {
+    width: calc(100vw - 160px);
+    height: 100%;
+    background: #fff;
+    position: relative;
+  }
+
+  main>.right>footer {
+    height: 50px;
+    width: 100%;
+    background: #6637c5;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  main>.right>.content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  main>.right>.content>.item {
+    width: 100%;
+    height: 2000px;
+    background: red;
+  }
+</style>
+
+<body>
+  <header class="header"></header>
+  <main>
+    <div class="left"></div>
+    <div class="right">
+      <div class="content">
+        <div class="item"></div>
+      </div>
+      <footer></footer>
+    </div>
+  </main>
+</body>
+
+</html>
